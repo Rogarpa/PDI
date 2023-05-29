@@ -152,28 +152,35 @@ def ribbon(width, length, array):
 im = Image.open('forest.jpg')
 pixelMap = im.load()
 
-size =33
+size =10
 proof = Image.new( im.mode, (size, size))
 pixelProof = proof.load()
 
 
-width = im.size[0]
-length = im.size[1]
+width = proof.size[0]
+length = proof.size[1]
 
-same = 20
+same = 1
 sqW = same
 sqL = same
 
 # squarer(sqW,sqL,pixelsNew, width, length)
 # mosaicFilter(1,1,pixelsNew, width, length)
 
-# squarer(sqW,sqL,pixelMap, width, length)
+
+# PRIMERA
+chessTable(sqW,sqL,pixelProof, width, length)
+pixelProof[1,8] = color
+
 # mosaicFilter(sqW,sqL,pixelMap, width, length)
-toGrayPromiddle(pixelMap, width, length)
+# toGrayPromiddle(pixelMap, width, length)
 # toGrayRedChannel(pixelMap, width, length)
 # toGrayGreenChannel(pixelMap, width, length)
 # toGrayBlueChannel(pixelMap, width, length)
 # mica(pixelMap,255,0,255, width, length)
 
-im.show()
+
+# SEGUNDA
+
+proof.show()
 im.save('foresb.jpg')
