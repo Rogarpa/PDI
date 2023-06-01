@@ -1,0 +1,9 @@
+Notas:
+# hacer barra scale para atandt
+# resizear imagenes a tamano frame
+# En p1 habilitar boton de abrir imagen
+p1,p2,p7 y p9 corriendo
+a partir de p2 reabrir funciona
+ridiculo:
+    terminar con gracia cuando no seleccion archivo
+    limpiar codigo no usado
